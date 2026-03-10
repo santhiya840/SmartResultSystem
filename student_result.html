@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Result</title>
+</head>
+
+<body>
+
+<h2>Student Result</h2>
+
+<table border="1">
+
+<tr>
+<th>Subject</th>
+<th>Mark</th>
+</tr>
+
+<tr>
+<td>Programming</td>
+<td>85</td>
+</tr>
+
+<tr>
+<td>Data Structures</td>
+<td>78</td>
+</tr>
+
+<tr>
+<td>Database</td>
+<td>82</td>
+</tr>
+
+<tr>
+<td>Operating System</td>
+<td>80</td>
+</tr>
+
+</table>
+
+<br>
+
+<button onclick="calculate()">Calculate Percentage</button>
+
+<p id="result"></p>
+
+<script>
+
+function calculate(){
+
+let m1 = 85;
+let m2 = 78;
+let m3 = 82;
+let m4 = 80;
+
+let total = m1 + m2 + m3 + m4;
+
+let percentage = total / 4;
+
+document.getElementById("result").innerHTML =
+"Total = " + total + "<br>Percentage = " + percentage + "%";
+
+}
+
+</script>
+
+</body>
+</html>
